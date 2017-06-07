@@ -6,9 +6,6 @@
 
 ## Technologies
 
-
-But wait... there's more!
-
   - *React.js
   - *react-redux
   - *react-router
