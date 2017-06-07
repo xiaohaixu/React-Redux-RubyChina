@@ -9,7 +9,7 @@ import 'public/styles/header.css'
 class Header extends React.Component {
     render() {
         return (
-            <Navbar className="navbar-fixed-top" id="navbar" inverse collapseOnSelect>
+            <Navbar className="navbar navbar-fixed-top navbar-default" id="navbar">
                 <Navbar.Header>
                     <Navbar.Brand>
                         <Link className="header-brand" to="/" ><b>Ruby</b>&nbsp;China</Link>
@@ -25,7 +25,18 @@ class Header extends React.Component {
                         <li><Link to='/jobs' >招聘</Link></li>
                         <li><a href='https://gems.ruby-china.org' target="_blank">Gems</a></li>
                     </ul>
-
+                    <ul className="nav user-bar navbar-nav navbar-right">
+                        <li><Link to='/register'>注册</Link></li>
+                        <li><Link to="/login">登录</Link></li>
+                    </ul>
+                    <Navbar.Form pullRight>
+                        <div className="header-search">
+                            <Link to="/"><Glyphicon glyph="search"/></Link>
+                            <FormGroup>
+                                <FormControl type="text" placeholder="Search" />
+                            </FormGroup>
+                        </div>
+                    </Navbar.Form>
                 </Navbar.Collapse>
             </Navbar>
 
