@@ -6,11 +6,11 @@
 
 ## Technologies
 
-  - *React.js
-  - *react-redux
-  - *react-router
-  - *redux-saga
-  - *immutable.js
+  - React.js
+  - react-redux
+  - react-router
+  - redux-saga
+  - immutable.js
 
 ## Quick start
 
