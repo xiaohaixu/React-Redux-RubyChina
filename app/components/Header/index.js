@@ -9,7 +9,7 @@ import 'public/styles/header.css'
 class Header extends React.Component {
     render() {
         return (
-            <Navbar className="navbar navbar-fixed-top navbar-default" id="navbar">
+            <Navbar className="navbar-fixed-top navbar navbar-default" id="navbar">
                 <Navbar.Header>
                     <Navbar.Brand>
                         <Link className="header-brand" to="/" ><b>Ruby</b>&nbsp;China</Link>

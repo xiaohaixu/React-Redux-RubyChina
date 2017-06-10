@@ -10,15 +10,25 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import { Grid, Panel } from 'react-bootstrap';
+import { Link } from 'react-router'
+import 'public/styles/homepage.css'
+
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+        <Grid>
+          <Panel className="dashboard">
+            <div className="dashboard-main">
+              <div className="dashboard-left"><img alt="dashboard-logo" src="https://twemoji.b0.upaiyun.com/2/svg/1f381.svg" style={{width: '55px'}} /></div>
+              <div className="dashboard-right">
+                <div style={{fontSize: '15px'}}>Ruby China 官方 <a href="https://gems.ruby-china.org" target="_blank">RubyGems 镜像</a>、<Link to="/wiki/ruby-mirror">Ruby 镜像</Link> 正式上线！</div>
+                <div><code style={{padding: '4px 10px'}}>gem source -a https://gems.ruby-china.org</code></div>
+              </div>
+            </div>
+          </Panel>
+        </Grid>
     );
   }
 }

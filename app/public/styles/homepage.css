@@ -1,0 +1,25 @@
+@media screen {
+    .dashboard{
+        display: block;
+    }
+
+}
+@media(max-width: 768px){
+    .dashboard{
+        display: none;
+    }
+}
+
+.dashboard-main{
+    margin: 0 auto;
+    width: 480px;
+}
+
+.dashboard-left, .dashboard-right{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dashboard-left img{
+    margin-right: 10px;
+}
