@@ -15,6 +15,8 @@ import { Link } from 'react-router'
 import FontAwesome from 'react-fontawesome';
 import 'public/styles/homepage.css'
 
+const hotCities = ["Beijing", "Shanghai", "Shenzhen", "Hangzhou", "Chengdu", "Guangzhou", "Wuhan", "Xian", "Nanjing", "Dalian", "Changsha", "Suzhou"];
+
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -63,9 +65,19 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           </Row>
 
           <Panel header="讨论节点分类导航">
+
           </Panel>
 
-          <Panel header="热门城市">
+          <Panel header="Hot Cities">
+              <div className="cityList">
+                  {hotCities.map((city, i) =>
+                      <span key={i}>
+                          <Link to="">
+                          {city}
+                          </Link>
+                      </span>
+                  )}
+              </div>
           </Panel>
 
         </Grid>

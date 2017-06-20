@@ -76,3 +76,15 @@
 .dashboard-row .panel-footer a:hover{
     text-decoration: underline;
 }
+
+/*
+Hot City List
+ */
+.cityList {
+    text-align: center;
+}
+
+.cityList span a {
+    color: #666;
+    padding: 0 10px;
+}
