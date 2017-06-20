@@ -10,8 +10,9 @@
  */
 
 import React from 'react';
-import { Grid, Panel } from 'react-bootstrap';
+import { Grid, Panel, Row, Col,} from 'react-bootstrap';
 import { Link } from 'react-router'
+import FontAwesome from 'react-fontawesome';
 import 'public/styles/homepage.css'
 
 
@@ -28,6 +29,45 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
               </div>
             </div>
           </Panel>
+
+          <Row className="dashboard-row">
+              <Col md={3}>
+                  <Link to="/topics">
+                      <Panel footer={<div>Ruby Community<FontAwesome name='arrow-right' /></div>}>
+                          <FontAwesome name="comments-o" style={{color: '#F86334'}}/>
+                      </Panel>
+                  </Link>
+              </Col>
+              <Col md={3}>
+                  <Link to="/wiki">
+                      <Panel footer={<div>Tech Doc<FontAwesome name='arrow-right'/></div>}>
+                          <FontAwesome name="support" style={{color: '#FFD52F'}}/>
+                      </Panel>
+                  </Link>
+              </Col>
+              <Col md={3}>
+                  <Link to="/jobs">
+                      <Panel footer={<div>Careers<FontAwesome name='arrow-right'/></div>}>
+                          <FontAwesome name="users" style={{color: '#317DDA'}}/>
+                      </Panel>
+
+                  </Link>
+              </Col>
+              <Col md={3}>
+                  <Link to="/topics/popular">
+                      <Panel footer={<div>Best Articles<FontAwesome name='arrow-right'/></div>}>
+                          <FontAwesome name="diamond" style={{color: '#3BD54E'}}/>
+                      </Panel>
+                  </Link>
+              </Col>
+          </Row>
+
+          <Panel header="讨论节点分类导航">
+          </Panel>
+
+          <Panel header="热门城市">
+          </Panel>
+
         </Grid>
     );
   }

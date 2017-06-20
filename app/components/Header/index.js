@@ -12,22 +12,22 @@ class Header extends React.Component {
             <Navbar className="navbar-fixed-top navbar navbar-default" id="navbar">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link className="header-brand" to="/" ><b>Ruby</b>&nbsp;China</Link>
+                        <Link className="header-brand" to="/" ><b>Ruby</b>&nbsp;<b>China</b></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <ul id="nav" className="nav navbar-nav">
-                        <li><Link to='/topics'>社区</Link></li>
+                        <li><Link to='/topics'>community</Link></li>
                         <li><Link to='/wiki'>Wiki</Link></li>
-                        <li><Link to='/sites'>酷站</Link></li>
+                        <li><Link to='/sites'>Sites</Link></li>
                         <li><Link to='/homeland'>Homeland</Link></li>
-                        <li><Link to='/jobs' >招聘</Link></li>
+                        <li><Link to='/jobs' >Careers</Link></li>
                         <li><a href='https://gems.ruby-china.org' target="_blank">Gems</a></li>
                     </ul>
                     <ul className="nav user-bar navbar-nav navbar-right">
-                        <li><Link to='/register'>注册</Link></li>
-                        <li><Link to="/login">登录</Link></li>
+                        <li><Link to='/register'>Login</Link></li>
+                        <li><Link to="/login">Sign In</Link></li>
                     </ul>
                     <Navbar.Form pullRight>
                         <div className="header-search">
