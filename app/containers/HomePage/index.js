@@ -65,6 +65,11 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
               </Col>
           </Row>
 
+          <Panel header="Popular Posts" className="topics-panel" footer="More...">
+              <Row>
+              </Row>
+          </Panel>
+
           <Panel header="Categories">
               <Node></Node>
           </Panel>
