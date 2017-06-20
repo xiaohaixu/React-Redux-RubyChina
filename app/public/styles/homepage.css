@@ -78,6 +78,31 @@
 }
 
 /*
+Node Item
+ */
+.node-item {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.node-item label{
+    text-align: right;
+    min-width: 130px;
+    color: #aaa;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.node-data{
+    display: table-cell;
+    vertical-align: top;
+}
+
+
+/*
 Hot City List
  */
 .cityList {

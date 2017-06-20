@@ -13,7 +13,8 @@ import React from 'react';
 import { Grid, Panel, Row, Col,} from 'react-bootstrap';
 import { Link } from 'react-router'
 import FontAwesome from 'react-fontawesome';
-import 'public/styles/homepage.css'
+import Node from 'components/NodeItem';
+import 'public/styles/homepage.css';
 
 const hotCities = ["Beijing", "Shanghai", "Shenzhen", "Hangzhou", "Chengdu", "Guangzhou", "Wuhan", "Xian", "Nanjing", "Dalian", "Changsha", "Suzhou"];
 
@@ -64,8 +65,8 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
               </Col>
           </Row>
 
-          <Panel header="讨论节点分类导航">
-
+          <Panel header="Categories">
+              <Node></Node>
           </Panel>
 
           <Panel header="Hot Cities">
